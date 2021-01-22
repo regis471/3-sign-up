@@ -1,21 +1,28 @@
 body{
     background-color:  #06b5d0;
-    background-image:  url(""); 
-    backdrop-filter: blur(4px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 100vh;
+    
 
 
 }
 
+.background {
+    display: inline-block;
+    width: 100%;
+    background-image:  url("signup.png"); 
+    backdrop-filter: blur(15px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+}
+
 .container {
     display: inline-block;
-    width: 800px;
-    margin-left: calc((100% - 800px) / 2 );
-    margin-top: 100px;
-    position: relative;
+    width: 800px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 
 
@@ -27,7 +34,7 @@ body{
     padding: 40px;
     background: url("signup.png"); 
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center bottom;
     color: #fff;
     position: absolute;
@@ -48,13 +55,18 @@ body{
 
 .bottom-links {
     display: inline-block;
-    width: 100%;
-    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+    
+
     
 
 }
 .bottom-links > .link {
     display: inline-block;
+    color: #fff;
     
 }
 
@@ -68,8 +80,7 @@ body{
     width: 60%;
     float: right;
     padding: 60px;
-    background-color: white;
-    
+    background-color: white;    
     position: relative;
 
 
